@@ -1,0 +1,44 @@
+/* CSS Document */
+
+.popup { }
+
+.popup a, .popup a:visited {
+position: relative;
+display: block;
+width:auto;
+line-height: auto;
+text-align:center;
+text-decoration:none;
+text-transform:none;
+padding: 0;
+margin: 0;
+border: 0px;
+}
+
+.popup a span {display: none; text-decoration:none;}
+
+.popup a:hover { color:#003366; }
+
+/* the IE correction rule */
+.popup a:hover	{
+color:#003366;
+text-indent: 0; /* added the default value */
+}
+
+.popup a:hover span{
+display: block;
+position: absolute;
+top: 20px;
+left: -50px;
+width: 275px;
+margin: 0px;
+padding: 10px;
+color: #000;
+font-weight: normal;
+font-style: normal;
+background: #fff;
+text-align: left;
+text-decoration:none;
+border: 3px solid #003366;
+z-index:500;
+}

@@ -1,0 +1,105 @@
+A:link {text-decoration: none; color:#3b2412;}
+A:visited {text-decoration: none; color:#3b2412;}
+A:active {text-decoration: none; color:#3b2412;}
+A:hover {text-decoration:none; font-weight:bold; font-size:110%; color:#3b2412;}
+
+html, body {
+
+background: #E2EF97 url('images/background.jpg') no-repeat;
+        	
+margin:0px 0px;
+		
+		font-family: Arial, san-serif;
+		font-size:100%;
+		line-height:110%;
+		color:#3b2412;
+
+		}
+		
+#menu {
+	position:absolute;
+	top:175px;
+	left:135px;
+	width:225px;
+	height:241px;
+	z-index:3;
+	}
+
+#submenu {
+	padding:25px;
+	width:475px;
+	font-size:80%;
+	text-align:center;
+	}
+
+#submenu A:link {text-decoration: none; color:#3b2412;}
+#submenu A:visited {text-decoration: none; color:#3b2412;}
+#submenu A:active {text-decoration: none; color:#3b2412;}
+#submenu A:hover {text-decoration:none; font-weight:bold; font-size:110%; color:#3b2412;}
+	
+#content {
+	position:absolute;
+	background:transparent;
+	top:180px;
+	left:400px;
+	width:525px;
+	height:400px;
+	z-index:2;
+	}
+
+.top {
+	width:541px;
+	height:50px;
+	padding:0px;
+	background:#fff url('images/top.jpg') no-repeat top center;
+	}
+
+.middle {
+	width:525px;
+	padding:9px;
+	background:transparent url('images/middle.jpg') repeat-y top center;
+	}
+	
+.bottom {
+	width:541px;
+	height:50px;
+	padding:0px;
+	background:#fff url('images/bottom.jpg') no-repeat bottom center;
+	font-size:75%;
+	text-align:center;
+	}
+
+.bottom A:link {text-decoration: none;}
+.bottom A:visited {text-decoration: none;}
+.bottom A:active {text-decoration: none;}
+.bottom A:hover {text-decoration:none; font-weight:bold;}
+
+	
+.title {
+	padding-top:6px;
+	padding-left:28px;
+	font-family Arial, san-serif;
+	font-size:125%;
+	font-weight:bold;
+	}
+	
+.subtitle {
+	padding-left:25px;
+	font-family Arial, san-serif;
+	font-size:110%;
+	font-weight:bold;
+	font-style:italic;
+	}
+
+.text {
+	padding-left:50px;
+	padding-right:35px;
+	width:440px;
+	text-align:justify;
+	font-family Arial, san-serif;
+	font-size:90%;
+	}
+
+#form {
+	text-align:center;
+		}

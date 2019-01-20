@@ -1,0 +1,164 @@
+/* CSS Document */
+
+A:link {text-decoration: none; font-weight:bold; color:red;}
+A:visited {text-decoration: none; color:red;}
+A:active {text-decoration: none;  color:red;}
+A:hover {text-decoration: underline; color:#003366;}
+
+#menu A:link {text-decoration: none; color:#fff; font-weight:bold;}
+#menu A:visited {text-decoration: none; color:#fff; font-weight:bold;}
+#menu A:active {text-decoration: none;  color:#fff; font-weight:bold;}
+#menu A:hover {text-decoration: underline; color:#fff; font-weight:bold;}
+
+.footer-text A:link {text-decoration: none; color:#666; font-weight:bold;}
+.footer-text A:visited {text-decoration: none; color:#666; font-weight:bold;}
+.footer-text A:active {text-decoration: none;  color:#666; font-weight:bold;}
+.footer-text A:hover {text-decoration: underline; color:#666; font-weight:bold;}
+
+* {
+	margin: 0;
+}
+
+html, body {
+	height:100%;
+	background: #333 url('images/bg.jpg') repeat-x top left;
+	font-family:'Arial', Arial, sans-serif;
+	font-size:100%;
+	text-align:center;
+	color:#000;
+	}
+	
+#invis {
+	background:transparent url('images/bg2.png') no-repeat top center;
+	width:960px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -75px; /* the bottom margin is the negative value of the footer's height */
+
+	}
+
+/*Header*/
+	
+#header {
+	background:transparent url('images/header-bg.png') no-repeat top center;
+	width:960px;
+	height:235px;
+	z-index:1;
+	}
+
+	
+#menu {
+	font-family:'Arial', Arial, sans-serif;
+	font-size:70%;
+	color:#fff;
+	z-index:100;
+	}
+
+/*Content*/
+
+#content {
+	margin-top:0px;
+	width:960px;
+	height:auto;
+	background:transparent url('images/content-bg.png') no-repeat top center;
+	z-index:1;
+	}
+
+.body {
+	margin-left:179px;
+	min-height:325px;
+	width:669px;
+	background: #fff url('images/content-bg2.png') no-repeat top center;
+	}
+
+p.title {
+	padding-top:25px;
+	padding-bottom:10px;
+	padding-left:25px;
+	width:90%;
+	height:20px;
+	text-align:justify;
+	font-family:'Arial', Arial, sans-serif;
+	font-size:110%;
+	font-weight:bold;
+	color:#000;
+	}
+
+p.subtitle {
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:25px;
+	width:90%;
+	height:20px;
+	text-align:justify;
+	font-family:'Arial', Arial, sans-serif;
+	font-size:100%;
+	font-weight:bold;
+	font-style:italic;
+	color:#000;
+	}
+
+p.subtitle2 {
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:25px;
+	width:90%;
+	height:20px;
+	text-align:justify;
+	font-family:'Arial', Arial, sans-serif;
+	font-size:90%;
+	font-weight:bold;
+	font-style:italic;
+	color:#000;
+	}
+
+p.text	{
+	padding-bottom:5px;
+	padding-left:50px;
+	width:580px;
+	text-align:justify;
+	font-family:'Arial', Arial, sans-serif;
+	font-size:80%;
+	color:#000;
+	}
+
+table, tr, td {
+	text-align:justify;
+	font-family:'Arial', Arial, sans-serif;
+	color:#000;
+	font-size:100%;
+	}
+
+/*Sub-Menu*/
+
+#submenu	{
+	text-align:right;
+	font-family:'Arial', Arial, sans-serif;
+	font-size:90%;
+	color:#000;
+	}
+
+/*Footer*/
+
+.push {
+	width:960px;
+	height:75px;
+}
+
+.footer {
+	background:transparent url() no-repeat top center;
+	width:960px;
+	height:75px;
+	text-align:center;
+	}
+
+p.footer-text {
+	padding-top:40px;
+	text-align:center;
+	line-height:14px;
+	font-family:'Arial', Arial, sans-serif;
+	font-size:70%;
+	color:#666;
+	}
+

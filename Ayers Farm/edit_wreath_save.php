@@ -1,0 +1,61 @@
+<?php
+
+$login=$_POST['login'];
+$pass=$_POST['pass'];
+
+if ($login!="bjorkcs" || $pass!="toshiba") {
+die(); 
+}
+else
+{
+
+$idnum=$_POST['idnum'];
+$firstname=$_POST['firstname'];
+$lastname=$_POST['lastname'];
+$address=$_POST['address'];
+$phone=$_POST['phone'];
+$email=$_POST['email'];
+$side=$_POST['side'];
+$bow=$_POST['bow'];
+$inches=$_POST['inches'];
+$details=$_POST['details'];
+
+$dbserver="10.6.166.84";
+$dbuser="ayersfarm";
+$dbpass="Farmersmarket1";
+$db="ayersfarm";
+$dbtable="wreaths";
+
+$show_all = "SELECT * FROM $table
+WHERE Username = '$login'
+ORDER BY Idnum";
+
+$con=mysql_connect($dbserver, $dbuser, $dbpass);
+if (!con) {
+die( mysql_error());
+}
+
+mysql_select_db($db) or die( mysql_error());
+
+mysql_query("UPDATE $dbtable set Idnum='$idnum',
+FirstName='$firstname',
+LastName='$lastname',
+Address='$address',
+Phone_No='$phone',
+Email='$email',
+Side='$side',
+Bow='$bow',
+Inches='$inches',
+Details='$details'
+WHERE Idnum = '$idnum'") or die( mysql_error());
+
+  print('<form action="admin_cp_wreath.php" method="post" name="changesave" enctype="multipart/form-data">');
+  print('<input type="hidden" name="login" value="'.$login.'">');
+  print('<input type="hidden" name="pass" value="'.$pass.'">');
+  print('<input type="submit" value="Changes Saved. Return to Wreath Order CP.">');
+  print('</form>');
+  print('<script language="JavaScript" type="text/javascript">document.changesave.submit();</script>');
+  
+}
+
+?>

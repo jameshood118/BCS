@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="styles.php" rel="stylesheet" type="text/css">
+<title>Ayers Farm | About Us</title>
+
+
+    <script type="text/javascript" src="swfobject.js"></script>
+	
+	<script type="text/javascript">
+	function showonlyone(thechosenone) {
+      var newboxes = document.getElementsByTagName("div");
+            for(var x=0; x<newboxes.length; x++) {
+                  name = newboxes[x].getAttribute("name");
+                  if (name == 'newboxes') {
+                        if (newboxes[x].id == thechosenone) {
+                        newboxes[x].style.display = 'block';
+                  }
+                  else {
+                        newboxes[x].style.display = 'none';
+                  }
+            }
+      }
+}
+	</script>
+	
+</head>
+
+<body>
+
+<div id="menu">
+
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="225" height="241">
+        <param name="movie" value="flash/menu.swf" /><param name="quality" value="high" /><param name="wmode" value="transparent" /><param name="bgcolor" value="#ffffff" />
+		<embed src="flash/menu.swf" quality="high" wmode="transparent" bgcolor="#ffffff" width="225" height="241" name="menu"></embed>
+        <!--[if IE ]>
+        <object type="application/x-shockwave-flash" data="flash/menu.swf" width="225" height="241">
+		<param name="movie" value="flash/menu.swf" /><param name="quality" value="high" /><param name="wmode" value="transparent" /><param name="bgcolor" value="#ffffff" />
+				<embed src="flash/menu.swf" quality="high" wmode="transparent" bgcolor="#ffffff" width="225" height="241" name="menu"></embed>
+        <!--<![endif]-->
+          <p>Alternative content</p>
+        <!--[if IE ]>
+        </object>
+        <!--<![endif]-->
+      </object>
+
+</div>
+
+<div id="content">
+
+<div class="top">
+    <p style="height:10px;">&nbsp;</p>
+<p class="title">About Us</p>
+</div>
+<div class="middle">
+<div name="newboxes" id="newboxes3" style="display:none;">
+<p class="subtitle">Images</p>
+      <p class="text"> 
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="225" height="241">
+        <param name="movie" value="flash/fader.swf" /><param name="quality" value="high" /><param name="wmode" value="transparent" /><param name="bgcolor" value="#ffffff" />
+		<embed src="flash/fader.swf" quality="high" wmode="transparent" bgcolor="#ffffff" width="400" height="300" name="fader"></embed>
+        <!--[if IE ]>
+        <object type="application/x-shockwave-flash" data="flash/menu.swf" width="400" height="300">
+		<param name="movie" value="flash/fader.swf" /><param name="quality" value="high" /><param name="wmode" value="transparent" /><param name="bgcolor" value="#ffffff" />
+				<embed src="flash/fader.swf" quality="high" wmode="transparent" bgcolor="#ffffff" width="400" height="300" name="fader"></embed>
+        <!--<![endif]-->
+          <p>Alternative content</p>
+        <!--[if IE ]>
+        </object>
+        <!--<![endif]-->
+      </object>
+      </p>
+</div>
+<div name="newboxes" id="newboxes1" style="display:block;">
+<p class=subtitle>Company Information</p><p class=text>Ayers Farm is a family owned and operated business. We have supplied the residents of Huntsville with farm-fresh produce for over 30 years! We strive to give the freshest produce available to our customers - some produce is even picked on the very day of its sale. During the months of May and October, on every Monday, Wednesday and Friday, we travel to Ethridge, Tennessee. There, we visit the Amish community to buy fresh produce that they have grown specifically for the residents of Huntsville. The produce we purchase is available for sale on Tuesdays, Thursdays and Saturdays at our Market.</p><p class=text>In addition to our fresh produce, we carry a full line of canned fruits and jellies. Many of our jellies are available in sugar-free varieties! In addition, we create special, fully-customizable Fruit Baskets. Each basket is always made to order, always handpicked for freshness, and NEVER pre-packaged. We ask that you call in to place an order for your Fruit Basket so that it will be made to your specifications. Prices for baskets range from $27.50 to $65.00 and delivery to Huntsville Hospital is free.</p>
+      <p class=text>We accept Visa and Master Card.</p>
+</div>
+<div name="newboxes" id="newboxes2" style="display:none;">
+<p class=subtitle>The Owner</p><p class=text><center><img src="images/founder.jpg" width=250 height=300 border=1/><center><br/><br/>Susan Ayers-Kelley, Owner</center></center></p>
+</div>
+</div><center><center>
+<div class="bottom">
+<a href="javascript:showonlyone('newboxes1');">Company Information</a>
+
+&nbsp; | &nbsp;
+
+<a href="javascript:showonlyone('newboxes2');">The Owner</a> 
+
+&nbsp; | &nbsp;
+
+<a href="javascript:showonlyone('newboxes3');">Images</a>
+
+</div>
+
+  <div id="submenu"> <a href="index.html" target="_self">Home</a> | <a href="about.htm" target="_self">About 
+    Us</a> | <a href="products.php" target="_self">Products</a> | <a href="contact.html" target="_self">Contact 
+    Us</a> | <a href="admin.php" target="_self">Admin</a> </div>
+
+</center></center></div>
+
+</body>
+</html>
